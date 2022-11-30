@@ -2,7 +2,7 @@
 using Eto.Forms;
 using System;
 
-namespace Systray;
+namespace Mixduino.Systray;
 
 internal class Program
 {
