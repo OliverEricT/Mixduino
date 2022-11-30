@@ -1,4 +1,4 @@
-﻿namespace Core;
+﻿namespace Mixduino;
 
 public class Class1
 {

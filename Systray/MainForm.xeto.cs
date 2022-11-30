@@ -4,28 +4,27 @@ using Eto.Serialization.Xaml;
 using System;
 using System.Collections.Generic;
 
-namespace Systray
+namespace Systray;
+
+public class MainForm : Form
 {
-    public class MainForm : Form
+    public MainForm()
     {
-        public MainForm()
-        {
-            XamlReader.Load(this);
-        }
+        XamlReader.Load(this);
+    }
 
-        protected void HandleClickMe(object sender, EventArgs e)
-        {
-            MessageBox.Show("I was clicked!");
-        }
+    protected void HandleClickMe(object sender, EventArgs e)
+    {
+        MessageBox.Show("I was clicked!");
+    }
 
-        protected void HandleAbout(object sender, EventArgs e)
-        {
-            new AboutDialog().ShowDialog(this);
-        }
+    protected void HandleAbout(object sender, EventArgs e)
+    {
+        new AboutDialog().ShowDialog(this);
+    }
 
-        protected void HandleQuit(object sender, EventArgs e)
-        {
-            Application.Instance.Quit();
-        }
+    protected void HandleQuit(object sender, EventArgs e)
+    {
+        Application.Instance.Quit();
     }
 }
